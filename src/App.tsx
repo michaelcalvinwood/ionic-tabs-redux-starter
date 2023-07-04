@@ -1,4 +1,6 @@
 import { Redirect, Route } from 'react-router-dom';
+import { PiTree } from 'react-icons/pi';
+import { GiLightningBranches } from 'react-icons/gi'
 import {
   IonApp,
   IonIcon,
@@ -60,12 +62,12 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon aria-hidden="true" icon={triangle} />
-            <IonLabel>Tab 1</IonLabel>
+            <PiTree size={'1.75rem'}/>
+            <IonLabel>Trees</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon aria-hidden="true" icon={ellipse} />
-            <IonLabel>Tab 2</IonLabel>
+            <GiLightningBranches size="1.75rem" />
+            <IonLabel>Branches</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
             <IonIcon aria-hidden="true" icon={square} />
